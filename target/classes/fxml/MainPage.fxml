@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Rectangle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.MainPageController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../css/Style.css">
+    <top>
+        <VBox alignment="CENTER">
+            <Text id="title" text="CupHead" />
+        </VBox>
+    </top>
+
+    <AnchorPane>
+        <Rectangle fx:id="avatar" layoutX="70" layoutY="50" width="100" height="100"/>
+    </AnchorPane>
+
+    <center>
+        <VBox spacing="25" alignment="CENTER">
+            <Button text="Start New Game" onMouseClicked="#startGame"/>
+            <Button text="Continue Previous Game" onMouseClicked="#continueLastGame"/>
+            <Button text="Profile" onMouseClicked="#profile" />
+            <Button text="ScoreBoard" onMouseClicked="#showScoreBoard" />
+            <Button text="Exit" onMouseClicked="#exit" />
+        </VBox>
+
+    </center>
+
+</BorderPane>

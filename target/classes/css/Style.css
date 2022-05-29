@@ -1,0 +1,59 @@
+#title{
+    -fx-font-size: 120;
+    -fx-font-weight: bold;
+}
+
+Label{
+    -fx-font-size: 35;
+    -fx-text-fill: #020277;
+}
+
+#lives{
+    -fx-font-size: 20;
+}
+
+#message{
+    -fx-text-fill: #d70303;
+    -fx-font-size: 28;
+}
+
+TextField{
+    -fx-max-width: 450;
+    -fx-pref-height: 40;
+    -fx-border-radius: 30;
+    -fx-font-size: 25;
+}
+
+Button{
+    -fx-pref-width: 400;
+    -fx-font-size: 20;
+    -fx-border-color: #04ab04;
+    -fx-border-width: 3;
+    -fx-border-radius: 5;
+    -fx-background-color: #aceeac;
+}
+
+#button1{
+    -fx-font-size: 40;
+    -fx-border-color: #010170;
+    -fx-background-color: #8b8bfc;
+}
+
+#button2{
+    -fx-pref-width: 150;
+}
+
+#pane{
+    -fx-background-color: white;
+}
+
+#littleTitle {
+    -fx-font-size: 70;
+    -fx-font-weight: bold;
+}
+
+#button3{
+    -fx-font-size: 10;
+    -fx-pref-width: 50;
+    -fx-max-width: 50;
+}

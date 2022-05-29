@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Rectangle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ProfilePageController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../css/Style.css">
+    <top>
+        <VBox alignment="CENTER">
+            <Text id="title" text="CupHead" />
+        </VBox>
+    </top>
+
+    <AnchorPane>
+        <VBox spacing="15" alignment="CENTER" layoutX="100" layoutY="150" maxWidth="400">
+            <Label text="Username"/>
+            <TextField fx:id="username" promptText="enter new username" />
+            <Button text="Change Username" onMouseClicked="#changeUsername"/>
+            <Text/>
+            <Label text="Password"/>
+            <TextField fx:id="password" promptText="enter new password" />
+            <Button text="Change Password" onMouseClicked="#changePassword"/>
+            <Text/>
+            <Label fx:id="message" id="message"/>
+        </VBox>
+        <Rectangle fx:id="avatar" layoutX="70" layoutY="50" width="100" height="100"/>
+    </AnchorPane>
+
+    <AnchorPane>
+        <Button id="button2" text="back" layoutX="1110" layoutY="20" onMouseClicked="#back"/>
+        <VBox spacing="50" alignment="CENTER" layoutX="700" layoutY="200" maxWidth="400">
+            <Button id="button1" text="Logout" onMouseClicked="#logout"/>
+            <Button id="button1" text="Delete Account" onMouseClicked="#deleteAccount"/>
+        </VBox>
+        <HBox spacing="50" alignment="CENTER" layoutX="700" layoutY="550">
+            <Rectangle fx:id="avatar1" width="100" height="100" onMouseClicked="#changeAvatar1"/>
+            <Rectangle fx:id="avatar2" width="100" height="100" onMouseClicked="#changeAvatar2"/>
+            <Rectangle fx:id="avatar3" width="100" height="100" onMouseClicked="#changeAvatar3"/>
+        </HBox>
+    </AnchorPane>
+
+</BorderPane>
+

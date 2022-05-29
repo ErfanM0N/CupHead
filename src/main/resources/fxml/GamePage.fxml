@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.GamePageController"
+      prefHeight="720" prefWidth="1280" stylesheets="@../css/Style.css" fx:id="pane">
+
+    <Rectangle fx:id="backGround" width="1280" height="650"/>
+    <Rectangle fx:id="backGround2" width="1280" height="650"/>
+    <Rectangle fx:id="cupHead" width="150" height="120" focusTraversable="true" onKeyPressed="#moveAndFire"/>
+    <Rectangle fx:id="bossRect" width="280" height="200"/>
+
+    <Label text="BossLives: " layoutX="1100" layoutY="680" id="lives"/>
+    <Label fx:id="lives" layoutX="1200" layoutY="680" id="lives"/>
+    <Label text="Timer: " layoutX="550" layoutY="680" id="lives"/>
+    <Label fx:id="time" layoutX="620" layoutY="680" id="lives"/>
+    <Label text="CupHeadLives: " layoutX="30" layoutY="650" id="lives"/>
+    <Label fx:id="cupHeadLives" layoutX="180" layoutY="650" id="lives"/>
+    <Label text="Score: " layoutX="30" layoutY="680" id="lives"/>
+    <Label fx:id="cupHeadScore" layoutX="100" layoutY="680" id="lives"/>
+    <Button id="button2" text="Restart" layoutX="260" layoutY="650" onMouseClicked="#restart"/>
+    <Button id="button2" text="Pause" layoutX="700" layoutY="650" onMouseClicked="#pause"/>
+    <Button id="button2" text="MainMenu" layoutX="900" layoutY="650" onMouseClicked="#backToMainMenu"/>
+    <Button id="button3" text="mute" layoutX="440" layoutY="650" onMouseClicked="#mute"/>
+</Pane>

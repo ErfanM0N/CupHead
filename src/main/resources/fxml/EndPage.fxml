@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.EndPageController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/Style.css">
+        <top>
+            <VBox alignment="CENTER">
+                <Text id="littleTitle" text="CupHead"/>
+            </VBox>
+        </top>
+    <AnchorPane>
+        <Label text="Your Score:" layoutX="200" layoutY="120"/>
+        <Label fx:id="score" layoutX="400" layoutY="120"/>
+        <Label text="Time:" layoutX="200" layoutY="160"/>
+        <Label fx:id="time" layoutX="300" layoutY="160"/>
+        <Button text="Restart" layoutX="100" layoutY="250" onMouseClicked="#restart"/>
+        <Button text="Back To MainMenu" layoutX="100" layoutY="330" onMouseClicked="#backToMainMenu"/>
+    </AnchorPane>
+</BorderPane>
